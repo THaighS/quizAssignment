@@ -1,10 +1,14 @@
 package Client;
 
+import Packets.AddPlayerPacket;
+
 public class EventListener {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public void received(Object p) {
+		if(p instanceof AddPlayerPacket) {
+			AddPlayerPacket packet = (AddPlayerPacket)p;
+			
+		}
 	}
 
 }
